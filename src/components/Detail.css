@@ -1,0 +1,10 @@
+.detail-movie-container{
+    color: white;
+    margin-top: 10vh;
+}
+
+.circle-icon{
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px 5px 5px 5px;
+}
