@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 import Claro from './containers/Claro';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, withRouter } from 'react-router-dom';
 import results from './redux/reducers/results';
 import searchResults from './redux/reducers/searchResults';
 import TestRenderer from 'react-test-renderer';
@@ -98,5 +98,5 @@ test('verify header', () => {
   const testInstance = testRenderer.root;
   const tree = testRenderer.toJSON();
   expect(tree).toMatchSnapshot();
-  expect(testInstance.props).toBe({});
+  expect(testInstance.findByType(Header)).toBeTruthy();
 })
