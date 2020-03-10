@@ -1,9 +1,32 @@
+.card-container {
+    width: 290px;
+    height: 163px;
+    display: table;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.img-card {
+    display: block !important;
+}
+
 .play .icon-play {
     display: none;
 }
 
 .play:hover .icon-play {
     display: block;
+}
+
+.play:hover .icon-play:hover {
+    display: block;
+    opacity: 1;
+}
+
+.play:hover {
     opacity: 1;
 }
 
@@ -15,19 +38,15 @@
 }
 
 .play{
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    width: 100%;
-    height: 100%;
+    width: 292px;
+    height: 163px;
     background-color: rgba(34,34,34,.5);
     margin: 0 0 15px 15px;
-}
-
-.play, .link-a{
-    transition: all .1s linear;
 }
 
 .play .fa-play-circle-o{
@@ -40,6 +59,6 @@
     position: absolute;
 }
 
-.link-a:hover .play {
+a:hover .play {
     visibility: visible;
 }

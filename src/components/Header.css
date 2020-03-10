@@ -4,3 +4,7 @@ header{
     width: 100vw;
     margin-bottom: 15vh;
 }
+
+.img-go-home:hover {
+    cursor: pointer;
+}

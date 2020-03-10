@@ -48,6 +48,13 @@ class ListMovies extends React.Component {
             return this.props.searchResults.map( (movie) => {
                 return(
                     <Col key={movie.id}
+                        style={{
+                            width: '100%',
+                            position: 'relative',
+                            minHeight: '1px',
+                            paddingLeft: '5px',
+                            paddingRight: '5px',
+                        }}
                         xs={{ span: 3, offset: 1 }}
                         sm={{ span: 4, offset: 1 }}
                         md={{ span: 4, offset: 1 }}

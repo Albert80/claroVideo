@@ -1,15 +1,19 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom';
 import LogoSVG from '../assets/img/clarovideo-logo-sitio.svg';
 import './Header.css';
 
 class Header extends React.Component {
+    handleClick = () => {
+        this.props.history.push('/');
+    }
 
     render(){
         return(
             <header>
                 <Navbar bg="black" variant="dark">
-                    <Navbar.Brand>
+                    <Navbar.Brand className='img-go-home' onClick={this.handleClick}>
                         <img
                             alt='Clarovideo Logo'
                             src={LogoSVG}
@@ -23,4 +27,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default withRouter(Header);
